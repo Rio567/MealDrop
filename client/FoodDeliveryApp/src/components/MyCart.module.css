@@ -1,0 +1,60 @@
+.outerContainer {
+    position: fixed; 
+  
+    top:10%;
+    width: 100%;
+    height:100%; 
+    background-color: rgba(74, 78, 74, 0.192);
+    display:flex;
+    z-index: 1050; 
+    overflow-y: auto; /*Adds scroll to the container if content is larger than the viewport */
+    background-attachment:fixed;
+    /* align-items: center; This centers the child vertically */
+    justify-content: center;
+  }
+
+  .container{
+     position:relative;
+     z-index:0;
+     width: 90%; /* Make the width responsive */
+    max-width: 670px; /* Max width to avoid too wide on large screens */
+    margin: 0 auto; /* Center the container */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Optional: Adds shadow for better visibility */
+    background: #fff; /* Optional: Change according to your design */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    
+  }
+  .closeButton {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border: none;
+    color: rgb(255, 255, 255); /* Adjust color as needed */
+    font-size: 24px; /* Adjust size as needed */
+    cursor: pointer;
+    background-color: aqua;
+    z-index: 1;
+  }
+  
+  .closeButton:hover {
+    color: #ccc; /* Adjust hover color as needed */
+  }
+
+  @media (max-width: 768px) {
+    .container {
+        width: 100%; /* Use the full width on smaller screens */
+        border-radius: 0; /* Optional: Remove border-radius on small screens for full-width */
+    }
+
+    .closeButton {
+        top: 10px; /* Adjust positioning for better visibility on small screens */
+        right: 10px;
+    }
+}
+  @media (max-width: 480px) {
+    .closeButton {
+        font-size: 20px; /* Slightly smaller icons on very small screens */
+    }
+}
+ 
+  

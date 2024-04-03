@@ -1,0 +1,21 @@
+.grid_container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Creates as many columns as can fit, with each column being at least 200px wide */
+    gap: 10px; /* Space between items */
+  }
+  
+  .grid-item {
+    /* Styling for each item */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align:center;
+  }
+  .CategoryHeading {
+    text-align: center; /* This will center the <h1> text */
+    margin-top:40px;
+    color:rgb(167, 163, 233);
+    font-style: italic;
+    
+}
